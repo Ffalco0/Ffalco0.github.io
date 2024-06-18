@@ -55,7 +55,8 @@ a:hover {
 }
 
 .dark-mode header {
-    background: linear-gradient(135deg, #000046, #1cb5e0);
+    background: linear-gradient(180deg,  #2c2c2c,  #1f1f1f);
+    color: white;
 }
 
 .dark-mode footer {
@@ -64,8 +65,8 @@ a:hover {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: white;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    color: black;
     padding: 5rem 0;
 }
 
@@ -157,15 +158,16 @@ footer a:hover {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
-    z-index: 1000; /* Ensure toggle is above other elements */
+    z-index: 1000;
     background-color: #343a40;
     color: #ffffff;
     border: none;
-    padding: 0.5rem;
-    border-radius: 50%;
+    padding: 0.5rem; /* Adjust padding as needed */
+    border-radius: 0; /* Remove any border-radius */
+    margin: -0.5rem; /* Negative margin hides corners */
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+  }
 
 .dark-mode .dark-mode-toggle {
     background-color: #ffffff;
