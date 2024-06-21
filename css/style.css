@@ -92,11 +92,16 @@ section h2::after {
     background-color: #6a11cb;
 }
 
-
+.carousel-item {
+    width: 100%;
+    height: 500px; /* Set your fixed height here */
+    position: relative;
+    overflow: hidden;
+}
 .carousel-item img {
     width: 100%;
     height: 100%;
-    object-fit:contain; /* Ensure the image covers the carousel item without stretching */
+    object-fit: cover; /* Ensure the image covers the carousel item without stretching */
 }
 
 /* Contact Section */
