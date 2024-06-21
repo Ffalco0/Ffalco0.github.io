@@ -10,26 +10,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Custom Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
 
 </head>
-<body>
-
-    <!-- Dark Mode Toggle Button -->
-    <button class="dark-mode-toggle" id="darkModeToggle">
-        <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-sun-fill d-none" viewBox="0 0 16 16">
-            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
-        </svg>
-        <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
-            <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
-        </svg>
-    </button>
-
+<body class="poppins-semibold">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Fabio Falco</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
@@ -56,24 +51,32 @@
             <p class="mt-4">
                 Hello! I’m Fabio Falco, a passionate Software Engineering student at the University of Naples Federico II with a love for both the virtual and real worlds of technology. My journey into the realm of computers and video games began at an early age, fueling my curiosity and shaping my future path as a developer.
             </p>
-            <h4 class="mt-5">🎮 A Gamer Turned Developer</h4>
-            <p>
-                From the moment I picked up my first video game controller, I was hooked—not just on playing, but on understanding what makes games tick. This fascination led me to dive deep into the world of video game development, where I now enjoy creating immersive experiences and interactive worlds. Whether it’s designing captivating gameplay mechanics or crafting visually stunning graphics, I thrive on bringing ideas to life through code.
-            </p>
-            <h4 class="mt-5">🛠 Always Learning, Always Growing</h4>
-            <p>
-                I’m a firm believer in the power of continuous learning and self-improvement. Every new technology I encounter is a new tool in my developer’s toolkit, and I’m not afraid to roll up my sleeves and tackle complex challenges. From mastering the latest programming languages to experimenting with cutting-edge frameworks, I’m driven by a relentless curiosity and a desire to push my limits.
-            </p>
-            <h4 class="mt-5">🌟 Why Work With Me?</h4>
-            <p>
-                Innovative Thinking: I bring a creative and analytical mindset to every project, constantly seeking innovative solutions to technical problems.<br>
-                Passion for Excellence: My commitment to high-quality code and attention to detail ensures that every project I undertake is executed with precision.<br>
-                Collaborative Spirit: I thrive in team environments, valuing communication and collaboration as key components to successful development.
-            </p>
-            <h4 class="mt-5">🚀 Let’s Create Something Amazing Together</h4>
-            <p>
-                Whether you’re looking for a game developer to bring your next big idea to life or a software engineer to tackle complex challenges, I’m excited to connect and collaborate. Let’s take on the next challenge and create something extraordinary!
-            </p>
+        </div>
+    <!-- About Me Section -->
+        <div class="container px-4 py-5" id="featured-3">
+            <h2 class="pb-2 border-bottom">About Me</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="feature col">
+                <h3 class="fs-2 text-body-emphasis">🎮 A Gamer Turned Developer</h3>
+                <p>
+                    From the moment I picked up my first video game controller, I was hooked—not just on playing, but on understanding what makes games tick. This fascination led me to dive deep into the world of video game development, where I now enjoy creating immersive experiences and interactive worlds. Whether it’s designing captivating gameplay mechanics or crafting visually stunning graphics, I thrive on bringing ideas to life through code.
+                </p>
+              </div>
+              <div class="feature col">
+                <h3 class="fs-2 text-body-emphasis">🛠 Always Learning, Always Growing</h3>
+                <p>
+                    I’m a firm believer in the power of continuous learning and self-improvement. Every new technology I encounter is a new tool in my developer’s toolkit, and I’m not afraid to roll up my sleeves and tackle complex challenges. From mastering the latest programming languages to experimenting with cutting-edge frameworks, I’m driven by a relentless curiosity and a desire to push my limits.
+                </p>
+              </div>
+              <div class="feature col">
+                <h3 class="fs-2 text-body-emphasis">🌟 Why Work With Me?</h3>
+                <p>
+                    Innovative Thinking: I bring a creative and analytical mindset to every project, constantly seeking innovative solutions to technical problems.<br>
+                    Passion for Excellence: My commitment to high-quality code and attention to detail ensures that every project I undertake is executed with precision.<br>
+                    Collaborative Spirit: I thrive in team environments, valuing communication and collaboration as key components to successful development.
+                </p>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -89,24 +92,21 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/img/cabin.png" class="d-block w-100" alt="Project 1">
+                        <img src="assets/img/appCion.jpg" class="d-block w-100" alt="Project 1">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Project 1: Game Development</h5>
-                            <p>Developed a captivating adventure game with intricate gameplay mechanics and stunning visuals.</p>
+                            <h5>BedDuccio: Game Development</h5>
+                            <p>
+                                Welcome to this game where you guide a raccoon through a series of mini-games that are actually his vivid nightmares. As he drifts to sleep, he faces bizarre and challenging scenarios, and it's your job to help him navigate through these dreamscapes. Be careful, though—if the raccoon wakes up too soon, he will end up vomiting from those rotten noodles he ate earlier!
+                            </p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/cake.png" class="d-block w-100" alt="Project 2">
+                        <img src="assets/img/HashiRunIcon.jpg" class="d-block w-100" alt="Project 2">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Project 2: Web Application</h5>
-                            <p>Created a responsive and user-friendly web application that solves complex problems with elegant solutions.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/circus.png" class="d-block w-100" alt="Project 3">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Project 3: AI and Machine Learning</h5>
-                            <p>Implemented innovative AI models to enhance user experiences and streamline operations.</p>
+                            <h5>HashiRun: Application</h5>
+                            <p>
+                                This project is referred to runners who want to have a different running experience. You can achieve levels and characters by select the challenge you want, whether you decide to run or just walk around the city, and do not forget to catch up collectibles. Be ready to face the boss once you finish every level for developing your character.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -159,16 +159,5 @@
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script>
-        const toggleButton = document.getElementById('darkModeToggle');
-        const moonIcon = document.getElementById('moonIcon');
-        const sunIcon = document.getElementById('sunIcon');
-        const body = document.body;
-    
-        toggleButton.addEventListener('change', () => {
-        sunIcon.classList.toggle('d-none');
-        moonIcon.classList.toggle('d-none');
-        });
-    </script>
 </body>
 </html>
