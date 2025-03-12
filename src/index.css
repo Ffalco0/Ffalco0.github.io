@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+@layer components {
+  .pixel-btn {
+    @apply px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-['Press_Start_2P'] text-sm transition-all 
+    border-b-4 border-purple-900 hover:border-purple-800 hover:-translate-y-[2px] active:translate-y-[2px] active:border-b-2;
+  }
+  
+  .section-title {
+    @apply font-['Press_Start_2P'] text-2xl md:text-3xl mb-8 text-green-400;
+  }
+
+  .game-card {
+    @apply bg-gray-800 p-6 rounded-lg border-2 border-purple-500 hover:border-purple-400 
+    transition-all hover:-translate-y-2 cursor-pointer;
+  }
+
+  .stat-bar {
+    @apply h-4 bg-gray-700 rounded-full overflow-hidden relative;
+  }
+
+  .stat-bar-fill {
+    @apply h-full relative;
+    animation: fillBar 1.5s ease-out forwards;
+  }
+
+  .stat-bar-segments {
+    @apply absolute inset-0 flex;
+  }
+
+  .stat-segment {
+    @apply h-full border-r border-black/20 flex-1;
+  }
+
+  @keyframes fillBar {
+    from { width: 0; }
+    to { width: var(--fill-percent); }
+  }
+
+  .stat-label {
+    @apply flex justify-between items-center mb-2 font-['Press_Start_2P'] text-sm;
+  }
+
+  .scroll-top-btn {
+    @apply fixed bottom-8 right-8 p-3 bg-purple-600 text-white rounded-full shadow-lg 
+    cursor-pointer transition-all duration-300 hover:bg-purple-700 border-2 border-purple-400
+    hover:-translate-y-1 z-50 opacity-0 pointer-events-none;
+  }
+
+  .scroll-top-btn.visible {
+    @apply opacity-100 pointer-events-auto;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+  }
+
+  .scroll-top-btn:hover svg {
+    animation: bounce 1s infinite;
+  }
+
+  /* New animations */
+  .hero-title {
+    @apply relative inline-block;
+    animation: textGlow 2s ease-in-out infinite;
+    text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+  }
+
+  .hero-subtitle {
+    @apply relative;
+    animation: textFloat 4s ease-in-out infinite;
+  }
+
+  .hero-subtitle span {
+    @apply inline-block relative;
+    animation: characterJump 0.5s ease-in-out;
+    animation-fill-mode: both;
+  }
+
+  .glitch-overlay {
+    @apply absolute inset-0 bg-purple-500 mix-blend-screen opacity-0;
+    animation: glitchEffect 5s infinite;
+  }
+
+  @keyframes textGlow {
+    0%, 100% {
+      text-shadow: 0 0 10px rgba(168, 85, 247, 0.5),
+                   0 0 20px rgba(168, 85, 247, 0.3),
+                   0 0 30px rgba(168, 85, 247, 0.2);
+      transform: scale(1);
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(168, 85, 247, 0.8),
+                   0 0 30px rgba(168, 85, 247, 0.5),
+                   0 0 40px rgba(168, 85, 247, 0.3);
+      transform: scale(1.02);
+    }
+  }
+
+  @keyframes textFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes characterJump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+  }
+
+  @keyframes glitchEffect {
+    0%, 90%, 100% { opacity: 0; transform: translate(0); }
+    91% { opacity: 0.3; transform: translate(-2px, 2px); }
+    92% { opacity: 0.3; transform: translate(2px, -2px); }
+    93% { opacity: 0; transform: translate(0); }
+    94% { opacity: 0.3; transform: translate(2px, 2px); }
+    95% { opacity: 0; transform: translate(0); }
+  }
+
+  .parallax-bg {
+    @apply absolute inset-0 z-0;
+    transform: translateZ(-1px) scale(2);
+  }
+}
