@@ -7,5 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/portfolio-game/', // Replace with your repository name
+  base: './', // This is important for GitHub Pages
 });
