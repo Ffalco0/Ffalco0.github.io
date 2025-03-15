@@ -7,5 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: './', // This is important for GitHub Pages
+  base: '/', // For username.github.io repository, use root path
 });
